@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+
+.topbar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+
+    color: white;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+}
+
+
+#desktop {
+    height: 100vh;
+}
+
+
+.icons {
+    padding-top: 80px;
+    padding-left: 25px;
+
+    display: flex;
+    gap: 30px;
+}
+
+
+.icon {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.icon span {
+    display: block;
+    font-size: 15px;
+}
+
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+.window {
+    position: absolute;
+
+    width: 350px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    display: none;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+
+
+.title {
+    height: 40px;
+
+    background: #202e5a;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 15px;
+
+    cursor: move;
+}
+
+
+
+.title button {
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #ff5f57;
+
+    padding: 0;
+
+    cursor: pointer;
+
+}
+
+
+
+.content {
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+
+
+h1 {
+
+    font-size: 40px;
+
+}
+
+
+
+button {
+
+    padding: 8px 15px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2a5298;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    opacity: .8;
+
+}
+
+
+
+input {
+
+    padding: 8px;
+
+    width: 80%;
+
+}

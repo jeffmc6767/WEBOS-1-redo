@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WacOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <div>💻 WacOS</div>
+    <div id="clock">Loading...</div>
+</div>
+
+
+<div id="desktop">
+
+    <div class="icons">
+
+        <div class="icon" onclick="openApp('about')">
+            💻
+            <span>About</span>
+        </div>
+
+        <div class="icon" onclick="openApp('stopwatch')">
+            ⏱️
+            <span>Stopwatch</span>
+        </div>
+
+        <div class="icon" onclick="openApp('timer')">
+            ⏳
+            <span>Timer</span>
+        </div>
+
+    </div>
+
+
+
+    <div class="window" id="about">
+
+        <div class="title">
+            <button onclick="closeApp('about')">●</button>
+            <span>About WacOS</span>
+        </div>
+
+        <div class="content">
+
+            <h2>WacOS</h2>
+
+            <p>
+                A custom WebOS inspired by Windows and macOS.
+            </p>
+
+            <p>
+                This project combines a simple desktop
+                experience with a modern interface.
+            </p>
+
+            <p>
+                Built for Hack Club as an educational project.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="window" id="stopwatch">
+
+        <div class="title">
+            <button onclick="closeApp('stopwatch')">●</button>
+            <span>Stopwatch</span>
+        </div>
+
+
+        <div class="content">
+
+            <h1 id="stopwatchDisplay">
+                00:00:00
+            </h1>
+
+
+            <button onclick="startStopwatch()">
+                Start
+            </button>
+
+            <button onclick="stopStopwatch()">
+                Stop
+            </button>
+
+            <button onclick="resetStopwatch()">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="window" id="timer">
+
+        <div class="title">
+            <button onclick="closeApp('timer')">●</button>
+            <span>Timer</span>
+        </div>
+
+
+        <div class="content">
+
+            <input id="timerInput" placeholder="Seconds">
+
+
+            <h1 id="timerDisplay">
+                0
+            </h1>
+
+
+            <button onclick="startTimer()">
+                Start
+            </button>
+
+
+            <button onclick="resetTimer()">
+                Reset
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
